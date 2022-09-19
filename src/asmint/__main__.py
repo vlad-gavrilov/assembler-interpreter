@@ -1,10 +1,10 @@
 import argparse
 from os.path import exists
 
-from interpreter import Interpreter
+from .interpreter import Interpreter
 
 
-if __name__ == '__main__':
+def main():
     parser = argparse.ArgumentParser(description='Assembler interpreter')
     parser.add_argument('path', help='the path to the program to be executed')
     parser.add_argument('-l', '--labels', help='show labels', action='store_true')
@@ -24,4 +24,8 @@ if __name__ == '__main__':
         args.labels and print('Labels: ', interpreter.labels)
         args.program and print('Program: ', *interpreter.program, sep='\n')
         args.registers and print('Registers: ', interpreter.registers)
-        print(output)
+        print('Output: ', output)
+
+
+if __name__ == '__main__':
+    main()

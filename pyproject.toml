@@ -1,0 +1,22 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "assembler-interpreter"
+version = "0.0.1"
+description = "Interprets programs in assembly language"
+readme = "README.md"
+authors = [{ name = "Vlad Gavrilov", email = "gavrilov.rostov@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["assembler", "interpreter", "cli"]
+
+requires-python = ">=3.8"
+
+[project.scripts]
+asmint = "asmint.__main__:main"
