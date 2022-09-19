@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "assembler-interpreter"
-version = "0.0.1"
+version = "0.1.0"
 description = "Interprets programs in assembly language"
 readme = "README.md"
 authors = [{ name = "Vlad Gavrilov", email = "gavrilov.rostov@gmail.com" }]
@@ -17,6 +17,10 @@ classifiers = [
 keywords = ["assembler", "interpreter", "cli"]
 
 requires-python = ">=3.8"
+
+[project.urls]
+"Homepage" = "https://github.com/vlad-gavrilov/assembler-interpreter"
+"Bug Tracker" = "https://github.com/vlad-gavrilov/assembler-interpreter/issues"
 
 [project.scripts]
 asmint = "asmint.__main__:main"
