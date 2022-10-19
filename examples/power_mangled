@@ -1,0 +1,49 @@
+mov   a, 2            ; value1
+ mov   b, 10           ; value2
+  mov   c, a            ; temp1
+            mov   d, b            ; temp2
+call            proc_func
+call                                                print
+add a, -1
+
+
+
+
+end
+
+; comment1
+; comment2
+; comment3
+; yet another comment
+
+proc_func:
+cmp   d, 1
+ je    continue
+                        mul   c, a
+    dec   d         ; here is a comment message
+  call  proc_func
+
+
+
+
+continue:
+    ret
+print:
+; comment1
+;comment2
+;comment3
+;             yet another comment
+    msg a, '^', b, ' = ', c
+
+
+
+
+
+
+
+
+
+                                                                           ret ; it hid :)
+
+
+
