@@ -4,3 +4,6 @@ venv/
 dist/
 src/assembler_interpreter.egg-info/
 src/asmint/__pycache__/
+
+requirements.txt
+tests/__pycache__/

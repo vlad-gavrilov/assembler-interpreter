@@ -18,6 +18,10 @@ keywords = ["assembler", "interpreter", "cli"]
 
 requires-python = ">=3.8"
 
+[project.optional-dependencies]
+build = ["build", "twine"]
+dev   = ["pytest"]
+
 [project.urls]
 "Homepage" = "https://github.com/vlad-gavrilov/assembler-interpreter"
 "Bug Tracker" = "https://github.com/vlad-gavrilov/assembler-interpreter/issues"
